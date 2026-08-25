@@ -1,0 +1,36 @@
+.header {
+	top: 6;
+	right: 0;
+	left: 0;
+	background-color: var(--bg-color);
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__actions-button {
+	display: flex;
+	width: 36px;
+	height: 36px;
+	align-items: center;
+	justify-content: center;
+	color: var(--main-color);
+	transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+	.header__actions-button:hover {
+		color: var(--bg-color-button);
+	}
+}
+
+.header__actions-button:active {
+	color: var(--bg-color-button);
+}
+
+.header__actions-icon {
+	stroke: currentColor;
+}
