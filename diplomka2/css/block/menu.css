@@ -1,0 +1,21 @@
+.menu__list {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.menu__link {
+	font-family: var(--second-family);
+	font-weight: 900;
+	/* min-size 375, max-size 1440px */
+	/* clamp(0.5rem, 0.236rem + 1.13vw, 1.25rem); */
+	font-size: clamp(0.938rem, 0.246rem + 1.12vw, 1.25rem);
+	color: var(--main-color);
+	transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+	.menu__link:hover {
+		color: var(--bg-color-button);
+	}
+}
